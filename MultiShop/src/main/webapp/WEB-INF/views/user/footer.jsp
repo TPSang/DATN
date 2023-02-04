@@ -31,8 +31,8 @@
 					<div class="col-md-4 mb-5">
 						<h5 class="text-secondary text-uppercase mb-4">Truy Cập</h5>
 						<div class="d-flex flex-column justify-content-start">
-							<a class="text-secondary mb-2" href="#"><i
-								class="fa fa-angle-right mr-2"></i>Trang chủ</a> <a
+							<a class="text-secondary mb-2" href="/index"><i
+								class="fa fa-angle-right mr-2" ></i>Trang chủ</a> <a
 								class="text-secondary mb-2" href="#"><i
 								class="fa fa-angle-right mr-2"></i>Blogs</a> <a
 								class="text-secondary mb-2" href="#"><i
@@ -46,8 +46,8 @@
 					<div class="col-md-4 mb-5">
 						<h5 class="text-secondary text-uppercase mb-4">Chính sách</h5>
 						<div class="d-flex flex-column justify-content-start">
-							<a class="text-secondary mb-2" href="#"><i
-								class="fa fa-angle-right mr-2"></i>Home</a> <a
+							<a class="text-secondary mb-2" href="/index"><i
+								class="fa fa-angle-right mr-2" ></i>Home</a> <a
 								class="text-secondary mb-2" href="#"><i
 								class="fa fa-angle-right mr-2"></i>Our Shop</a> <a
 								class="text-secondary mb-2" href="#"><i

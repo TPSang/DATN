@@ -62,7 +62,7 @@
 										đến 20%. Click để xem chi tiết.</p>
 									<a
 										class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-										href="#">Mua ngay</a>
+										href="/shop/category/5">Mua ngay</a>
 								</div>
 							</div>
 						</div>
@@ -81,7 +81,7 @@
 										đến 20%. Click để xem chi tiết.</p>
 									<a
 										class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-										href="#">Mua Ngay</a>
+										href="/shop/category/2">Mua Ngay</a>
 								</div>
 							</div>
 						</div>
@@ -112,16 +112,16 @@
 					<img class="img-fluid" src="/user/img/offer-1.jpg" alt="">
 					<div class="offer-text">
 						<h6 class="text-white text-uppercase">Giảm giá 20%</h6>
-						<h3 class="text-white mb-3">Quần Jean Nữ</h3>
-						<a href="" class="btn btn-primary">Mua ngay</a>
+						<h3 class="text-white mb-3">Quần Áo Nữ</h3>
+						<a href="/shop/category/2" class="btn btn-primary">Mua ngay</a>
 					</div>
 				</div>
 				<div class="product-offer mb-30" style="height: 200px;">
 					<img class="img-fluid" src="/user/img/offer-2.jpg" alt="">
 					<div class="offer-text">
 						<h6 class="text-white text-uppercase">Giảm giá 20%</h6>
-						<h3 class="text-white mb-3">Túi Xách Nữ</h3>
-						<a href="" class="btn btn-primary">Mua ngay</a>
+						<h3 class="text-white mb-3">Mỹ Phẩm</h3>
+						<a href="/shop/category/4" class="btn btn-primary">Mua ngay</a>
 					</div>
 				</div>
 			</div>
