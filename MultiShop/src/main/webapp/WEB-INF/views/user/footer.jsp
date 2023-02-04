@@ -47,7 +47,7 @@
 						<h5 class="text-secondary text-uppercase mb-4">Chính sách</h5>
 						<div class="d-flex flex-column justify-content-start">
 							<a class="text-secondary mb-2" href="/index"><i
-								class="fa fa-angle-right mr-2" ></i>Home</a> <a
+								class="fa fa-angle-right mr-2" ></i>Chất Lượng</a> <a
 								class="text-secondary mb-2" href="#"><i
 								class="fa fa-angle-right mr-2"></i>Our Shop</a> <a
 								class="text-secondary mb-2" href="#"><i
@@ -61,22 +61,14 @@
 						</div>
 					</div>
 					<div class="col-md-4 mb-5">
-						<h5 class="text-secondary text-uppercase mb-4">Nhận Thông tin</h5>
-						<p>Đăng ký email để nhận những thông tin khuyến mãi mới nhất</p>
-						<form action="">
-							<div class="input-group">
-								<input type="text" class="form-control"
-									placeholder="Địa chỉ email">
-								<div class="input-group-append">
-									<button class="btn btn-primary">Đăng ký</button>
-								</div>
-							</div>
-						</form>
+						<h5 class="text-secondary text-uppercase mb-4">Địa Chỉ</h5>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15674.069140162392!2d106.61734189999999!3d10.84820495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529b6a2b351a5%3A0x11690ada8c36f9bc!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIFRo4buxYyBow6BuaCBGUFQgUG9seXRlY2huaWMgVFAuSENNIChDUzMp!5e0!3m2!1svi!2s!4v1675403003379!5m2!1svi!2s" width="410" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						
 						<h6 class="text-secondary text-uppercase mt-4 mb-3">Theo Dõi</h6>
 						<div class="d-flex">
 							<a class="btn btn-primary btn-square mr-2" href="#"><i
 								class="fab fa-twitter"></i></a> <a
-								class="btn btn-primary btn-square mr-2" href="#"><i
+								class="btn btn-primary btn-square mr-2" href="https://www.facebook.com/trantrongduy1902"><i
 								class="fab fa-facebook-f"></i></a> <a
 								class="btn btn-primary btn-square mr-2" href="#"><i
 								class="fab fa-linkedin-in"></i></a> <a

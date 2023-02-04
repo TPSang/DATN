@@ -20,8 +20,8 @@
 			class="btn btn-link d-md-none rounded-circle mr-3">
 			<i class="fa fa-bars"></i>
 		</button>
-
-		<!-- Topbar Search -->
+<!--
+		<!-- Topbar Search 
 		<form
 			class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
 			<div class="input-group">
@@ -109,18 +109,15 @@
 						All Alerts</a>
 				</div></li>
 
-			<!-- Nav Item - Messages -->
-			<li class="nav-item dropdown no-arrow mx-1"><a
-				class="nav-link dropdown-toggle" href="#" id="messagesDropdown"
-				role="button" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false"> <i class="fas fa-globe-asia"></i> <!-- Counter - Messages -->
-					<span class="badge badge-danger badge-counter">2</span>
+			
+			
 			</a> <!-- Dropdown - Messages -->
 			<li class="nav-item dropdown no-arrow mx-1"><a
 				class="nav-link dropdown-toggle" href="#" id="messagesDropdown"
 				role="button" data-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false"> <i class="fas fa-envelope fa-fw"></i> <!-- Counter - Messages -->
 					<span class="badge badge-danger badge-counter">7</span>
+					
 			</a> <!-- Dropdown - Messages -->
 				<div
 					class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"

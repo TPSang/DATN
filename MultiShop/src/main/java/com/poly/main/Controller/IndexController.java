@@ -24,6 +24,7 @@ import com.poly.main.Dao.UserDao;
 import com.poly.main.Entity.Category;
 import com.poly.main.Entity.Manufacture;
 import com.poly.main.Entity.Product;
+import com.poly.main.Model.ProductModel;
 import com.poly.main.Model.ShowCategory;
 import com.poly.main.Service.SessionService;
 
@@ -59,6 +60,20 @@ public class IndexController {
 	@GetMapping("/logout")
 	public String logout() {
 		return "user/index";
+	}
+	@GetMapping("/user/outstanding")
+	public String contact(Model model) {
+		// session.set("nameImage3", "");
+		ProductModel entity = new ProductModel();
+		model.addAttribute("productForm", entity);
+		return "user/outstanding";
+	}
+	@GetMapping("/user/productnew")
+	public String productnew(Model model) {
+		// session.set("nameImage3", "");
+		ProductModel entity = new ProductModel();
+		model.addAttribute("productForm", entity);
+		return "user/productnew";
 	}
 
 	@GetMapping("/successLogin")
