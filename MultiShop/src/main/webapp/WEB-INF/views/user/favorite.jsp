@@ -35,6 +35,9 @@
 <link href="/user/css/style.css" rel="stylesheet">
 <link href="/user/css/myaccount.css" rel="stylesheet">
 </head>
+<style>
+
+</style>
 <body>
 	<%@include file="navbar.jsp"%>
 
@@ -43,7 +46,7 @@
 		<div class="row px-xl-5">
 			<div class="col-12">
 				<nav class="breadcrumb bg-light mb-30">
-					<a class="breadcrumb-item text-dark" href="/index">Trang chủ</a> <span
+					<a class="breadcrumb-item active" href="/index">Trang chủ</a> <span
 						class="breadcrumb-item active">Thông tin</span>
 				</nav>
 			</div>
@@ -66,7 +69,7 @@
 							class="nav-link active" id="payment-nav" data-toggle="pill"
 							href="#payment-tab"
 							onclick="location.href='/shop/profile/favorite';" role="tab"><i
-							class="fas fa-heart"></i>Sản Phẩm Yêu Thích</a> <a class="nav-link"
+							class="fas fa-heart "></i>Sản Phẩm Yêu Thích</a> <a class="nav-link"
 							id="address-nav" data-toggle="pill" href="/shop/profile/address"
 							onclick="location.href='/shop/profile/address';" role="tab"><i
 							class="fa fa-map-marker-alt"></i>Địa Chỉ Giao Hàng</a> <a

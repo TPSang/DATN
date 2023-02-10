@@ -11,9 +11,38 @@
 <title>Insert title here</title>
 </head>
 <style>
-.text-light {
-	color: #00cf1c !important;
+.bg-primary {
+    background-color: #95928f !important;
 }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #606060;
+}
+.bg-dark {
+    background-color: #ffac6b !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+}
+.text-dark{
+    color: #ffffff !important;
+
+}
+.text-danger{
+    color: #ffffff !important;
+}
+.bg-info{
+	background-color: #ffbe8c !important;
+}
+.text-muted {
+	color: #95928f !important;
+}
+.bg-red{
+	background-color: #ffac6b;
+}
+
 </style>
 
 <body>
@@ -28,8 +57,8 @@
 				class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
 				<div class="col-lg-4">
 					<a href="/index" class="text-decoration-none"> <span
-						class="h1 text-uppercase text-secondary bg-dark  px-2">Multi</span>
-						<span class="h1 text-uppercase  bg-primary px-2 ml-n1">Shop</span>
+						class="h1 text-uppercase text-muted  px-2">Multi</span>
+						<span class="h1 text-light bg-red px-2 ml-n1">Shop</span>
 					</a>
 				</div>
 				<div class="col-lg-4 col-6 text-left">
@@ -64,7 +93,7 @@
 				</div>
 				<div class="col-lg-4 col-6 text-right">
 					<p class="m-0">Dịch Vụ Tư Vấn</p>
-					<h5 class="m-0">0999921112</h5>
+					<h5 class="m-0">0988 777 666</h5>
 				</div>
 			</div>
 		</div>
@@ -76,11 +105,11 @@
 			<div class="row px-xl-5">
 				<div class="col-lg-3 d-none d-lg-block ">
 					<a
-						class="btn d-flex align-items-center justify-content-between bg-primary w-100"
+						class="btn d-flex align-items-center justify-content-between bg-info w-100"
 						data-toggle="collapse" href="#navbar-vertical"
 						style="height: 65px; padding: 0 30px;">
 						<h6 class="text-dark m-0">
-							<i class="fa fa-bars mr-2"></i>DANH MỤC SẢN PHẨM
+							<i class="fa fa-bars mr-2 "></i>DANH MỤC SẢN PHẨM
 						</h6> <i class="fa fa-angle-down text-dark"></i>
 					</a>
 					<nav
@@ -116,7 +145,7 @@
 						class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
 						<a href="" class="text-decoration-none d-block d-lg-none"> <span
 							class="h1 text-uppercase text-dark bg-light px-2">Multi</span> <span
-							class="h1 text-uppercase  bg-primary px-2 ml-n1">Shop</span>
+							class="h1 text-uppercase text-light bg-primary px-2 ml-n1">Shop</span>
 						</a>
 						<button type="button" class="navbar-toggler"
 							data-toggle="collapse" data-target="#navbarCollapse">
@@ -126,8 +155,8 @@
 							id="navbarCollapse">
 							<div class="navbar-nav mr-auto py-0">
 								<a href="/index" class="nav-item nav-link active">Trang chủ</a>
-								<a href="/user/productnew/" class="nav-item nav-link ">Mới
-									Nhất</a> <a href="/user/outstanding/" class="nav-item nav-link ">Nổi
+								<a href="/user/productnew/" class="nav-item nav-link text-light">Mới
+									Nhất</a> <a href="/user/outstanding/" class="nav-item nav-link text-light">Nổi
 									Bật</a>
 								<%-- <c:if test="${empty sessionScope.username}">
 
@@ -141,8 +170,8 @@
 											data-toggle="dropdown">Tài khoản <i
 											class="fa fa-angle-down mt-1"></i></a>
 										<div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-											<a href="/login" class="dropdown-item ">Đăng
-												nhập</a> <a href="/register" class="dropdown-item ">Đăng
+											<a href="/login" class="dropdown-item text-light">Đăng
+												nhập</a> <a href="/register" class="dropdown-item text-light">Đăng
 												ký</a>
 										</div>
 									</div>
@@ -166,12 +195,12 @@
 
 							<div class="navbar-nav ml-auto py-0 d-none d-lg-block">
 								<a href="/shop/profile/favorite" class="btn px-0"> <i
-									class="fas fa-heart text-primary"></i> <span
+									class="fas fa-heart text-danger"></i> <span
 									class="badge text-secondary border border-secondary rounded-circle"
 									style="padding-bottom: 2px;">${sessionScope.countFavorite}
 										${sessionScope.countFavorite==null?'0':''}</span>
 								</a> <a href="/shop/cart" class="btn px-0 ml-3"> <i
-									class="fas fa-shopping-cart text-primary"></i> <span
+									class="fas fa-shopping-cart text-danger"></i> <span
 									class="badge text-secondary border border-secondary rounded-circle"
 									style="padding-bottom: 2px;">${sessionScope.countProduct}
 										${sessionScope.countProduct==null?'0':''}</span>
