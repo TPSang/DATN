@@ -27,8 +27,8 @@
 <body>
 	<!-- Footer Start -->
 	<div class="container-fluid bg-success text-dark mt-5 pt-5">
-		<div class="row px-xl-5 pt-5">
-			<div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+		<div class="row px-xl-5 pt-5 ">
+			<div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5 ">
 				<h5 class="text-secondary text-uppercase mb-4">Liên Hệ</h5>
 				<p class="mb-2">
 					<i class="fa fa-map-marker-alt text-white mr-3"></i> Trường Cao Đẳng FPT Polytechnic

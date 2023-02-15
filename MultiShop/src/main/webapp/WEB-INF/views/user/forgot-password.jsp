@@ -17,7 +17,7 @@
 <!-- Custom styles for this template-->
 <link href="/manager/css/sb-admin-2.min.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-primary">
+<body class="bg-gradient-dark">
 	<div class="container">
 
 		<!-- Outer Row -->
@@ -29,7 +29,7 @@
 					<div class="card-body p-0">
 						<!-- Nested Row within Card Body -->
 						<div class="row">
-							<div class="col-lg-6 d-none d-lg-block bg-password-image"></div>
+							<div class="col-lg-6 d-none d-lg-block "><img style="width: 450px; height: 400px" src="/user/img/quenmk.jpg"></div>
 							<div class="col-lg-6">
 								<div class="p-5">
 									<div class="text-center">

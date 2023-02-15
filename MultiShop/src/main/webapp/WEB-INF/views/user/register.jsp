@@ -17,15 +17,15 @@
 <!-- Custom styles for this template-->
 <link href="/manager/css/sb-admin-2.min.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-primary">
+<body class="bg-gradient-dark">
 	<div class="container">
 
-		<div class="card o-hidden border-0 shadow-lg my-5">
+		<div class="card o-hidden border-0 shadow-lg my-4">
 			<div class="card-body p-0">
 				<!-- Nested Row within Card Body -->
 				<div class="row">
-					<div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
-					<div class="col-lg-7">
+					<div class="col-lg-6 d-none d-lg-block "> <img style="width: 580px; height: 670px" src="/user/img/dangky.jpg"></div>
+					<div class="col-lg-6">
 						<div class="p-5">
 							<div class="text-center">
 								<h1 class="h4 text-gray-900 mb-4">Đăng Ký</h1>
@@ -33,7 +33,7 @@
 							<form:form action="/register/check" modelAttribute="userRegister"
 								method="post" class="user">
 								<div class="form-group row">
-									<div class="col-sm-6 mb-3 mb-sm-0">
+									<div class="col-sm-12 mb-3 mb-sm-0">
 										<form:input path="fullname"
 											cssClass="form-control form-control-user"
 											cssErrorClass="form-control form-control-user is-invalid"
@@ -44,17 +44,7 @@
 										<form:errors path="fullname"
 											cssClass="invalid-feedback text-center" />
 									</div>
-									<div class="col-sm-6">
-										<form:input path="code"
-											cssClass="form-control form-control-user"
-											cssErrorClass="form-control form-control-user is-invalid"
-											id="exampleLastName" placeholder="Mã xác thực" />
-										<!-- <div class="invalid-feedback text-center">
-                                            Vui lòng nhập mã xác thực!
-                                        </div> -->
-										<form:errors path="code"
-											cssClass="invalid-feedback text-center" />
-									</div>
+									
 								</div>
 								<div class="form-group">
 									<!-- <input type="email" class="form-control form-control-user" id="exampleInputEmail"
@@ -70,12 +60,7 @@
 											placeholder="Nhập địa chỉ email"
 											aria-label="Recipient's username"
 											aria-describedby="button-addon2" />
-										<div class="input-group-append">
-											<button type="button" data-toggle="modal"
-												data-target="#exampleModal"
-												class="btn btn-outline-secondary btn-user"
-												id="button-addon2">Gửi</button>
-										</div>
+										
 									</div>
 									<form:errors path="email"
 										cssClass="invalid-feedback text-center" />
@@ -122,6 +107,25 @@
 											cssErrorClass="form-control form-control-user is-invalid"
 											id="exampleRepeatPassword" placeholder="Xác nhận mật khẩu" />
 										<form:errors path="confirm"
+											cssClass="invalid-feedback text-center" />
+									</div>
+									</div>
+									<div class="form-group row">
+									<div class="col-sm-12 input-group is-invalid mb-3">
+										<form:input path="code"
+											cssClass="form-control form-control-user"
+											cssErrorClass="form-control form-control-user is-invalid"
+											id="exampleLastName" placeholder="Mã xác thực" />
+										<!-- <div class="invalid-feedback text-center">
+                                            Vui lòng nhập mã xác thực!
+                                        </div> -->
+                                        <div class="input-group-append">
+											<button type="button" data-toggle="modal"
+												data-target="#exampleModal"
+												class="btn btn-outline-secondary btn-user"
+												id="button-addon2">Gửi</button>
+										</div>
+										<form:errors path="code"
 											cssClass="invalid-feedback text-center" />
 									</div>
 								</div>

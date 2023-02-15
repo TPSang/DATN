@@ -63,16 +63,14 @@ border-color: #ffffff;
 					<div class="carousel-item position-relative active"
 						style="height: 430px;">
 						<img class="position-absolute w-100 h-100"
-							src="/user/img/carousel-1.jpg" style="object-fit: cover;">
+							src="/user/img/quanaonam.jpg" style="object-fit: cover;">
 						<div
 							class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 							<div class="p-3" style="max-width: 700px;">
 								<h1
 									class="display-4 text-light mb-3 animate__animated animate__fadeInDown">
-									Thời Trang Nam</h1>
-								<p class="mx-md-5 px-5 animate__animated animate__bounceIn">Tuần
-									lễ vàng giảm giá thời trang nam chất lượng. Sản phẩm giảm lên
-									đến 20%. Click để xem chi tiết.</p>
+									Quần Áo Nam </h1>
+								
 								<a
 									class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
 									href="/shop/category/5">Mua ngay</a>
@@ -82,32 +80,31 @@ border-color: #ffffff;
 					<div class="carousel-item position-relative"
 						style="height: 430px;">
 						<img class="position-absolute w-100 h-100"
-							src="/user/img/carousel-2.jpg" style="object-fit: cover;">
+							src="/user/img/quanaonu.jpg" style="object-fit: cover;">
 						<div
 							class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 							<div class="p-3" style="max-width: 700px;">
 								<h1
 									class="display-4 text-light mb-3 animate__animated animate__fadeInDown">
-									Thời Trang Nữ</h1>
-								<p class="mx-md-5 px-5 animate__animated animate__bounceIn">Tuần
-									lễ vàng giảm giá thời trang nữ chất lượng. Sản phẩm giảm lên
-									đến 20%. Click để xem chi tiết.</p>
+									Quần Áo Nũ</h1>
+								<p class="mx-md-5 px-5 animate__animated animate__bounceIn">Các sản phẩm
+								được yêu thích nhiều nhất.Click để xem chi tiết.</p>
 								<a
 									class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-									href="/shop/category/2">Mua Ngay</a>
+									href="/user/outstanding/">Mua Ngay</a>
 							</div>
 						</div>
 					</div>
 					<div class="carousel-item position-relative"
 						style="height: 430px;">
 						<img class="position-absolute w-100 h-100"
-							src="/user/img/carousel-3.jpg" style="object-fit: cover;">
+							src="/user/img/3.jpg" style="object-fit: cover;">
 						<div
 							class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 							<div class="p-3" style="max-width: 700px;">
 								<h1
 									class="display-4 text-light mb-3 animate__animated animate__fadeInDown">
-									Thời Trang Trẻ Em</h1>
+									Phụ Kiện Thời Trang</h1>
 								<p class="mx-md-5 px-5 animate__animated animate__bounceIn">Tuần
 									lễ vàng giảm giá thời trang trẻ em chất lượng. Sản phẩm giảm
 									lên đến 20%. Click để xem chi tiết.</p>
@@ -230,29 +227,47 @@ border-color: #ffffff;
 
 
 <!-- Offer Start -->
-<div class="container-fluid pt-5 pb-3">
-	<div class="row px-xl-5">
-		<div class="col-md-6">
-			<div class="product-offer mb-30" style="height: 300px;">
-				<img class="img-fluid" src="/user/img/offer-1.jpg" alt="">
-				<div class="offer-text">
-					<h6 class="text-light text-uppercase">Save 20%</h6>
-					<h3 class="text-light mb-3">Special Offer</h3>
-					<a href="#" class="btn btn-primary">Shop Now</a>
+<div class="row px-xl-5">
+	<c:forEach var="item" items="${dates}">
+		<div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+			<div class="product-item bg-light mb-4">
+				<div class="product-img position-relative overflow-hidden">
+					<img class="img-fluid1 w-100" src="/upload/${item.image}" alt="">
+					<div class="product-action">
+						<a class="btn btn-outline-dark btn-square"
+							href="/shop/detail/${item.id}"><i
+								class="fa fa-shopping-cart"></i></a> <a
+							class="btn btn-outline-dark btn-square"
+							href="/shop/detail/${item.id}"><i class="far fa-heart"></i></a> <a
+							class="btn btn-outline-dark btn-square"
+							href="/shop/detail/${item.id}"><i class="fa fa-search"></i></a>
+					</div>
+				</div>
+				<div class="text-center py-4">
+					<a class="h6 text-decoration-none text-truncate"
+						href="/shop/detail/${item.id}">${item.name}</a>
+					<div class="d-flex align-items-center justify-content-center mt-2">
+						<h5>
+							<fmt:formatNumber type="number" pattern="###,###,###"
+								value="${item.price}" />
+							VNĐ
+						</h5>
+					</div>
+
+					<div class="d-flex align-items-center justify-content-center mb-1">
+						<small class="fa fa-star text-primary mr-1"></small> <small
+							class="fa fa-star text-primary mr-1"></small> <small
+							class="fa fa-star text-primary mr-1"></small> <small
+							class="fa fa-star text-primary mr-1"></small> <small
+							class="fa fa-star text-primary mr-1"></small> <small>(99)</small>
+					</div>
+
 				</div>
 			</div>
 		</div>
-		<div class="col-md-6">
-			<div class="product-offer mb-30" style="height: 300px;">
-				<img class="img-fluid" src="/user/img/offer-2.jpg" alt="">
-				<div class="offer-text">
-					<h6 class="text-light text-uppercase">Save 20%</h6>
-					<h3 class="text-light mb-3">Special Offer</h3>
-					<a href="#" class="btn btn-primary">Shop Now</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	</c:forEach>
+
+
 </div>
 <!-- Offer End -->
 
