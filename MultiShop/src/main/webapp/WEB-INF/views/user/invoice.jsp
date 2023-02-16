@@ -90,9 +90,9 @@ div[style*="margin: 16px 0;"] {
 									width="100%" style="max-width: 300px;">
 									<tr>
 										<td align="left" valign="top"
-											style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 800; line-height: 48px;"
-											class="mobile-center">
-											<h1
+											style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 800; line-height: 48px; " he
+											class="mobile-center ">
+											<h1 
 												style="font-size: 36px; font-weight: 800; margin: 0; color: #ffffff;">
 												MultiShop</h1>
 										</td>
@@ -115,7 +115,7 @@ div[style*="margin: 16px 0;"] {
 														<p
 															style="font-size: 18px; font-weight: 400; margin: 0; color: #ffffff;">
 															<a href="/index" target="_blank"
-																style="color: #ffffff; text-decoration: none;">Shop
+																style="color: #ffffff; text-decoration: none;">Trang Chủ
 																&nbsp;</a>
 														</p>
 													</td>
