@@ -32,95 +32,17 @@ rel="stylesheet">
 </head>
 <style>
 .text-light {
-<<<<<<< HEAD
-	color: #d95000 !important;
-=======
 color: #ffffff !important;
 }
 .btn-primary {
 color: #212529;
 background-color: #ffac6b;
 border-color: #ffffff;
->>>>>>> origin/duy
 }
 </style>
 
 <body>
 
-<<<<<<< HEAD
-	<%@include file="navbar.jsp"%>
-
-
-	<!-- Carousel Start -->
-	<div class="container-fluid mb-3">
-		<div class="row px-xl-5">
-			<div class="col-lg-8">
-				<div id="header-carousel"
-					class="carousel slide carousel-fade mb-30 mb-lg-0"
-					data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#header-carousel" data-slide-to="0"
-							class="active"></li>
-						<li data-target="#header-carousel" data-slide-to="1"></li>
-						<li data-target="#header-carousel" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item position-relative active"
-							style="height: 430px;">
-							<img class="position-absolute w-100 h-100"
-								src="/user/img/carousel-1.jpg" style="object-fit: cover;">
-							<div
-								class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-								<div class="p-3" style="max-width: 700px;">
-									<h1
-										class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
-										Thời Trang Nam</h1>
-									<p class="mx-md-5 px-5 animate__animated animate__bounceIn">Tuần
-										lễ vàng giảm giá thời trang nam chất lượng. Sản phẩm giảm lên
-										đến 20%. Click để xem chi tiết.</p>
-									<a
-										class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-										href="/shop/category/5">Mua ngay</a>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item position-relative"
-							style="height: 430px;">
-							<img class="position-absolute w-100 h-100"
-								src="/user/img/carousel-2.jpg" style="object-fit: cover;">
-							<div
-								class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-								<div class="p-3" style="max-width: 700px;">
-									<h1
-										class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
-										Thời Trang Nữ</h1>
-									<p class="mx-md-5 px-5 animate__animated animate__bounceIn">Tuần
-										lễ vàng giảm giá thời trang nữ chất lượng. Sản phẩm giảm lên
-										đến 20%. Click để xem chi tiết.</p>
-									<a
-										class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-										href="/shop/category/2">Mua Ngay</a>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item position-relative"
-							style="height: 430px;">
-							<img class="position-absolute w-100 h-100"
-								src="/user/img/carousel-3.jpg" style="object-fit: cover;">
-							<div
-								class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-								<div class="p-3" style="max-width: 700px;">
-									<h1
-										class="display-4 text-white mb-3 animate__animated animate__fadeInDown">
-										Thời Trang Trẻ Em</h1>
-									<p class="mx-md-5 px-5 animate__animated animate__bounceIn">Tuần
-										lễ vàng giảm giá thời trang trẻ em chất lượng. Sản phẩm giảm
-										lên đến 20%. Click để xem chi tiết.</p>
-									<a
-										class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-										href="#">Mua ngay</a>
-								</div>
-=======
 <%@include file="navbar.jsp"%>
 
 
@@ -189,7 +111,6 @@ border-color: #ffffff;
 								<a
 									class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
 									href="#">Mua ngay</a>
->>>>>>> origin/duy
 							</div>
 						</div>
 					</div>
@@ -219,84 +140,6 @@ border-color: #ffffff;
 <!-- Carousel End -->
 
 
-<<<<<<< HEAD
-	<!-- Featured Start -->
-
-	<!-- Featured End -->
-
-
-	<!-- Categories Start -->
-	<div class="container-fluid pt-0">
-		<h2
-			class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-			<span class="bg-secondary pr-3">Danh Mục</span>
-		</h2>
-		<div class="row px-xl-5 pb-3">
-			<c:forEach var="item" items="${procate}">
-				<div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-					<a class="text-decoration-none"
-						href="/shop/category/${item.group.id}">
-						<div class="cat-item d-flex align-items-center mb-4">
-							<div class="overflow-hidden" style="width: 100px; height: 100px;">
-								<img class="img-fluid" src="/upload/${item.group.image}" alt="">
-							</div>
-							<div class="flex-fill pl-3">
-								<h6>${item.group.name}</h6>
-								<small class="text-body">${item.count} Sản Phẩm</small>
-							</div>
-						</div>
-					</a>
-				</div>
-			</c:forEach>
-
-		</div>
-	</div>
-	<!-- Categories End -->
-
-
-	<!-- Products Start -->
-	<div class="container-fluid pt-5 pb-3">
-		<h2
-			class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-			<span class="bg-secondary pr-3">Sản phẩm</span>
-		</h2>
-		<div class="row px-xl-5">
-
-			<c:forEach var="item" items="${views}">
-				<div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-					<div class="product-item bg-light mb-4">
-						<div class="product-img position-relative overflow-hidden">
-							<img class="img-fluid1 w-100" src="/upload/${item.image}" alt="">
-							<div class="product-action">
-								<a class="btn btn-outline-dark btn-square"
-									href="/shop/detail/${item.id}"><i
-									class="fa fa-shopping-cart"></i></a> <a
-									class="btn btn-outline-dark btn-square"
-									href="/shop/detail/${item.id}"><i class="far fa-heart"></i></a>
-								<a class="btn btn-outline-dark btn-square"
-									href="/shop/detail/${item.id}"><i class="fa fa-search"></i></a>
-							</div>
-						</div>
-						<div class="text-center py-4">
-							<a class="h6 text-decoration-none text-truncate"
-								href="/shop/detail/${item.id}">${item.name}</a>
-							<div
-								class="d-flex align-items-center justify-content-center mt-2">
-								<h5>
-									<fmt:formatNumber type="number" pattern="###,###,###"
-										value="${item.price}" />
-									VNĐ
-								</h5>
-							</div>
-							<div
-								class="d-flex align-items-center justify-content-center mb-1">
-								<small class="fa fa-star text-primary mr-1"></small> <small
-									class="fa fa-star text-primary mr-1"></small> <small
-									class="fa fa-star text-primary mr-1"></small> <small
-									class="fa fa-star text-primary mr-1"></small> <small
-									class="fa fa-star text-primary mr-1"></small> <small>(99)</small>
-							</div>
-=======
 <!-- Featured Start -->
 
 <!-- Featured End -->
@@ -372,7 +215,6 @@ border-color: #ffffff;
 								class="fa fa-star text-primary mr-1"></small> <small
 								class="fa fa-star text-primary mr-1"></small> <small
 								class="fa fa-star text-primary mr-1"></small> <small>(99)</small>
->>>>>>> origin/duy
 						</div>
 					</div>
 				</div>
@@ -426,11 +268,6 @@ border-color: #ffffff;
 	</c:forEach>
 
 
-<<<<<<< HEAD
-	<!-- Products Start -->
-
-	<!-- Products End -->
-=======
 </div>
 <!-- Offer End -->
 
@@ -454,7 +291,6 @@ border-color: #ffffff;
 		</div>
 
 	</div>
->>>>>>> origin/duy
 
 
 </div>
@@ -486,41 +322,6 @@ border-color: #ffffff;
 				style="padding: 30px;">
 				<h1 class="fa fa-phone-volume text-white m-0 mr-3"></h1>
 				<h5 class="font-weight-semi-bold m-0">24/7 Hỗ Trợ</h5>
-			</div>
-
-		</div>
-
-
-	</div>
-	<div class="container-fluid py-1">
-		<div class="row px-xl-5">
-			<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-				<div class="d-flex align-items-center bg-light mb-4"
-					style="padding: 30px;">
-					<h1 class="fa fa-check text-primary m-0 mr-3"></h1>
-					<h5 class="font-weight-semi-bold m-0">Chất Lượng</h5>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-				<div class="d-flex align-items-center bg-light mb-4"
-					style="padding: 30px;">
-					<h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
-					<h5 class="font-weight-semi-bold m-0">Miễn Phí Ship</h5>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-				<div class="d-flex align-items-center bg-light mb-4"
-					style="padding: 30px;">
-					<h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
-					<h5 class="font-weight-semi-bold m-0">14 Ngày Đổi Trả</h5>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-				<div class="d-flex align-items-center bg-light mb-4"
-					style="padding: 30px;">
-					<h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
-					<h5 class="font-weight-semi-bold m-0">24/7 Hỗ Trợ</h5>
-				</div>
 			</div>
 		</div>
 	</div>
