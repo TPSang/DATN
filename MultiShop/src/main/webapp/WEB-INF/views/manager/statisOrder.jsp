@@ -28,7 +28,7 @@
 				<%@include file="navbar.jsp"%>
 
 				<!-- Begin Page Content -->
-				<div class="container-fluid">
+				<div class="container-fluid" style="width: 850px;">
 
 					<!-- Page Heading -->
 					<h1 class="h3 mb-2 text-gray-800">Thống Kê Sản Phẩm Mua Nhiều</h1>
@@ -66,14 +66,16 @@
 									<tr>
 										<th>STT</th>
 										<th>Tên sản phẩm</th>
-										<th>Lượt mua</th>	
+										<th>Lượt mua</th>
+										<th>Ngày</th>	
 									</tr>
 								</thead>
 								<tfoot>
 									<tr>
 										<th>STT</th>
 										<th>Tên sản phẩm</th>
-										<th>Lượt mua</th>									
+										<th>Lượt mua</th>
+										<th>Ngày</th>									
 									</tr>
 								</tfoot>
 								<tbody>
@@ -82,6 +84,8 @@
 											<td>${location = location + 1}</td>
 											<td>${item.group.name}</td>
 											<td>${item.count}</td>
+											<th>12/01/2022</th>	
+											
 										</tr>						
 									</c:forEach>
 								</tbody>

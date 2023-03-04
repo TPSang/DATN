@@ -21,10 +21,13 @@
     background-color: #ffffff;
     border-color: #ffffff;
 }
+.text-primary {
+    color: #ffac6b !important;
+}
 
 
 </style>
-<body>
+<body class="container-fluid">
 	<!-- Footer Start -->
 	<div class="container-fluid bg-success text-dark mt-5 pt-5">
 		<div class="row px-xl-5 pt-5 ">
@@ -73,7 +76,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 mb-5">
-						<h5 class="text-secondary text-uppercase mb-4 text-primary">Chính sách</h5>
+						<h5 class="text-secondary text-uppercase mb-4 ">Chính sách</h5>
 						<div class="d-flex flex-column justify-content-start">
 							<p class="text-secondary mb-2" ><i class="fa fa-check text-white m-0 mr-3"
 								class="fa fa-angle-right mr-2 text-primary" ></i> Chất Lượng</p> <p

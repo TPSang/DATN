@@ -28,7 +28,7 @@
 				<%@include file="navbar.jsp"%>
 
 				<!-- Begin Page Content -->
-				<div class="container-fluid">
+				<div class="container-fluid" style="width: 850px;">
 
 					<!-- Page Heading -->
 					<h1 class="h3 mb-2 text-gray-800">Danh Sách Đơn Hàng Đã Gửi</h1>
@@ -97,7 +97,10 @@
 											<td><a href="/admin/orderDetail/${item.name}"
 												class="btn btn-primary">Chi tiết</a> <a
 												href="/admin/order/wait/send/${item.name}"
-												class="btn btn-success">Giao hàng</a></td>
+												class="btn btn-success ">Đã Giao</a>
+												<button type="button" class="btn btn-danger"
+												data-toggle="modal" data-target="#exampleModal${item.name}">Hủy</button></td>
+												
 										</tr>									
 									</c:forEach>
 								</tbody>

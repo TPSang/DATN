@@ -26,7 +26,7 @@
 				<%@include file="navbar.jsp"%>
 
 				<!-- Begin Page Content -->
-				<div class="container-fluid">
+				<div class="container-fluid" style="width: 850px;">
 
 					<!-- Page Heading -->
 					<h1 class="h3 mb-2 text-gray-800">Danh Sách Nhân Viên</h1>

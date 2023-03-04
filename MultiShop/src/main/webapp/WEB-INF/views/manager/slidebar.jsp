@@ -6,6 +6,25 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+	.bg-gradient-primary {
+    background-color: #ff0000;
+    background-image: linear-gradient(180deg,#ffac6b 10%,#8d0000 100%);
+    background-size: cover;
+}
+.sidebar-dark .sidebar-brand {
+    color: #fff;
+}
+.sidebar-dark .sidebar-heading {
+    color: rgb(255 255 255);
+}
+.sidebar-dark .nav-item .nav-link {
+    color: rgb(0, 0, 0);
+}
+.sidebar-dark .nav-item .nav-link i {
+    color: rgb(46 46 46);
+}
+</style>
 <body>
 	<!-- Sidebar -->
 	<ul
@@ -13,15 +32,11 @@
 		id="accordionSidebar">
 
 		<!-- Sidebar - Brand -->
-		<a
-			class="sidebar-brand d-flex align-items-center justify-content-center"
-			href="/admin/employeeTable/list">
-			<div class="sidebar-brand-icon rotate-n-15">
-				<i class="fas fa-laugh-wink"></i>
-			</div>
-			<div  class="sidebar-brand-text mx-3">Multi Admin</div>
+		<a>
+			<div  class="sidebar-brand-text mx-3"><a class="row" href="/index"><img src="/user/img/logo.png" style="width: 200px;"
+				height="60px" alt=""></a></div>
 		</a>
-
+		<br>
 		<!-- Divider -->
 		<hr class="sidebar-divider my-0">
 
@@ -166,8 +181,13 @@
 					<h6 class="collapse-header">Thống kê Sản phẩm</h6>
 					<a class="collapse-item" href="/admin/statis/favorite">Yêu Thích</a>					
 					<a class="collapse-item" href="/admin/statis/order">Đơn Hàng</a>
+					<a class="collapse-item" href="/manager/thongke">Số liệu sản phẩm</a>
 				</div>
+				
 			</div></li>
+		
+			
+			
 
 		<!-- Nav Item - Charts -->
 		<!-- <li class="nav-item"><a class="nav-link" href="charts.html">

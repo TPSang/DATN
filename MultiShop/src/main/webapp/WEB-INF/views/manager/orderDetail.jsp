@@ -28,7 +28,7 @@
 				<%@include file="navbar.jsp"%>
 
 				<!-- Begin Page Content -->
-				<div class="container-fluid">
+				<div class="container-fluid" style="width: 950px;">
 
 					<!-- Page Heading -->
 					<h1 class="h3 mb-2 text-gray-800">Danh Sách Đơn Hàng Đang chờ</h1>

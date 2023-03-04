@@ -28,7 +28,7 @@
 				<%@include file="navbar.jsp"%>
 
 				<!-- Begin Page Content -->
-				<div class="container-fluid">
+				<div class="container-fluid" style="width: 900px; height: 300px;">
 
 					<!-- Page Heading -->
 					<h1 class="h3 mb-2 text-gray-800">Danh Sách Đơn Hàng Đang chờ</h1>
@@ -73,6 +73,7 @@
 										<th>Giá</th>
 										<th>Trạng thái</th>
 										<th>Hoạt động</th>
+										
 									</tr>
 								</thead>
 								<tfoot>
@@ -97,7 +98,9 @@
 											<td><a href="/admin/orderDetail/${item.name}"
 												class="btn btn-primary">Chi tiết</a> <a
 												href="/admin/order/wait/send/${item.name}"
-												class="btn btn-success">Giao hàng</a></td>
+												class="btn btn-success">Đã giao</a>
+												<button type="button" class="btn btn-danger"
+												data-toggle="modal" data-target="#exampleModal${item.name}">Hủy</button></td>
 										</tr>
 										<!-- Modal -->
 										<%-- <div class="modal fade" id="exampleModal${user.id}"

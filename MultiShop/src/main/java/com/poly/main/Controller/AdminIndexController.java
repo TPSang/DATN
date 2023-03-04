@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.poly.main.Dao.UserDao;
+import com.poly.main.Model.ProductModel;
 import com.poly.main.Service.WebUtils;
 
 @Controller
@@ -20,5 +21,12 @@ public class AdminIndexController {
 	@GetMapping("/admin/index")
 	public String index(Model model, Principal principal) {
 		return "manager/index";
+	}
+	@GetMapping("/manager/thongke")
+	public String productnew(Model model) {
+		// session.set("nameImage3", "");
+		ProductModel entity = new ProductModel();
+		model.addAttribute("productForm", entity);
+		return "manager/thongke";
 	}
 }
